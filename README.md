@@ -47,11 +47,14 @@ and divination, acting as witness to human destiny (*ayanmo*).
 
 ```
 kinifa/
-├── ifa.py          ← CLI entry point (main programme)
-├── odu_data.py     ← Data for all 16 principal Odu (Meji)
-├── divination.py   ← Opele & Ikin divination simulation classes
-├── utils.py        ← ASCII display helpers, banners, disclaimers
-└── README.md       ← This file
+├── ifa.py              ← CLI entry point (main programme)
+├── streamlit_app.py    ← Streamlit web interface (中文/English bilingual)
+├── odu_data.py         ← Data for all 16 principal Odu (Meji)
+├── odu_data_zh.py      ← Chinese translations for all 16 Odu
+├── divination.py       ← Opele & Ikin divination simulation classes
+├── utils.py            ← ASCII display helpers, banners, disclaimers
+├── requirements.txt    ← Python dependencies for Streamlit mode
+└── README.md           ← This file
 ```
 
 ---
@@ -59,13 +62,28 @@ kinifa/
 ## Requirements
 
 - **Python 3.10+**
-- No third-party packages required (standard library only)
+- CLI mode: No third-party packages required (standard library only)
+- Streamlit mode: `pip install -r requirements.txt`
 
 ---
 
 ## Usage
 
-### Interactive mode (recommended)
+### Streamlit web interface (recommended for 中文 / Chinese)
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+The Streamlit app provides:
+- 🌐 **Bilingual interface** — toggle between 中文 and English
+- 🎴 **Divination** — cast with Ọ̀pẹ̀lẹ̀ or Ikin, with Chinese display
+- 📋 **Browse** — view all 16 principal Odu in a table
+- 🔍 **View** — explore any specific Odu with full details in Chinese
+- 📖 **About Ifá** — introduction in both languages
+
+### Interactive CLI mode
 
 ```bash
 python ifa.py
@@ -185,9 +203,9 @@ The codebase is designed for future expansion:
 - **256 full Odu**: Add remaining Odu data to `odu_data.py` using the same `Odu` dataclass
 - **ẹsẹ verse database**: Extend the `Odu` dataclass with a `verses: List[str]` field
 - **AI-assisted interpretation**: Wrap `DivinationResult.interpret()` with an LLM call
-- **Web interface**: Import `divination.py` and `utils.py` into a Streamlit or Gradio app
+- **Web interface**: `streamlit run streamlit_app.py` — bilingual Chinese/English Streamlit app (already included)
 - **Telegram Bot**: Use `python-telegram-bot` with `IkinsOracle` as the backend
-- **Multi-language**: Add `meaning_zh_tw` (Traditional Chinese) fields to `Odu`
+- **Multi-language**: Chinese translations are in `odu_data_zh.py` — add more languages following the same pattern
 
 ---
 
