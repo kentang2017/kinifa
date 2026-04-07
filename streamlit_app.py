@@ -131,13 +131,6 @@ def t(key: str) -> str:
 # Odu rendering helpers
 # ---------------------------------------------------------------------------
 
-def render_figure_html(odu: Odu) -> str:
-    """Render the Odu figure as monospace HTML."""
-    lines = odu.figure_lines()
-    text = "\n".join(lines)
-    return f"```\n{text}\n```"
-
-
 def get_zh(odu_number: int) -> OduZh | None:
     """Get Chinese data for an Odu by number."""
     return ODU_ZH_BY_NUMBER.get(odu_number)
@@ -186,10 +179,7 @@ def display_odu_card(odu: Odu, show_ebo: bool = True) -> None:
         if odu.orisha:
             st.markdown(f"**{t('orisha')}:** {odu.orisha}")
         if odu.colors:
-            if is_zh():
-                st.markdown(f"**{t('sacred_colors')}:** {', '.join(odu.colors)}")
-            else:
-                st.markdown(f"**{t('sacred_colors')}:** {', '.join(odu.colors)}")
+            st.markdown(f"**{t('sacred_colors')}:** {', '.join(odu.colors)}")
 
     # Positive aspects & challenges
     col_pos, col_chal = st.columns(2)
