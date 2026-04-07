@@ -112,7 +112,7 @@ class DivinationResult:
             "spiritual": (
                 "Regarding your spiritual path: "
                 f"{self.odu.primary_meaning} "
-                "Connect with {self.odu.orisha} for guidance."
+                f"Connect with {self.odu.orisha} for guidance."
             ),
         }
 
