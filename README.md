@@ -1,6 +1,70 @@
 # Ifá Oracle — Orunmila's Wisdom
+# 伊法神諕 — 奧倫米拉的智慧
 
 **An educational Ifá divination system built with Python**
+
+**以 Python 構建的伊法占卜教育系統**
+
+---
+
+## 中文簡介
+
+伊法（Ifá）是西非約魯巴（Yoruba）民族的占卜系統與靈性智慧體系，已被列入
+[聯合國教科文組織非物質文化遺產名錄](https://ich.unesco.org/en/RL/ifa-divination-system-00146)。
+此系統由智慧與占卜之神 **奧倫米拉（Orunmila）** 傳授給人類，作為人類命運（*ayanmo*）的見證者。
+
+### ⚠️ 文化尊重聲明
+
+伊法是約魯巴民族**活的、神聖的口述傳統**。本軟體是一個**尊重文化的教育工具**，旨在：
+
+- 學習伊法哲學、宇宙觀與文化實踐
+- 文化欣賞與學術研究
+- 探索 16 個主要神諕（Odù）及其智慧教導
+
+本工具**不能**替代合格的 **巴巴拉沃（Babalawo，伊法祭司）** 或 **伊雅尼法（Iyanifa，女性伊法修行者）** 進行的真正占卜。重要的人生決定，請諮詢經過訓練與入門的修行者。
+
+伊法強調的是**因果關係，而非宿命論**。每個挑戰都有對應的補救之道（ẹbọ / ebo），每條道路都可以改善。
+
+### 功能特色
+
+- 🌐 **中英雙語介面** — 可在中文與英文之間切換
+- 🎴 **占卜功能** — 使用 Ọ̀pẹ̀lẹ̀（占卜鏈）或 Ikin（棕櫚果）進行占卜，支援中文顯示
+- 📋 **瀏覽** — 以表格形式查看所有 16 個主要神諕
+- 🔍 **查看** — 深入探索任何特定神諕的完整中文資料
+- 📖 **關於伊法** — 中英雙語介紹
+- 💻 **命令列模式** — 互動式 CLI 介面，適合終端用戶
+
+### 快速開始
+
+```bash
+# Streamlit 網頁介面（推薦，支援中文）
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+
+# 命令列互動模式
+python ifa.py
+```
+
+### 16 個主要神諕（Meji）
+
+| # | Meji 名稱 | 中文名稱 | 主要神祇 |
+|---|-----------|---------|---------|
+| 1 | Ejiogbe | 光明之滿盈 | Obatala |
+| 2 | Oyeku Meji | 重生前的黑暗 | Egungun / Oya |
+| 3 | Iwori Meji | 內在的洞見 | Ori / Obatala |
+| 4 | Odi Meji | 創造之母胎 | Yemoja / Osun |
+| 5 | Irosun Meji | 生命之血的流動 | Osun / Sopona |
+| 6 | Owonrin Meji | 變幻莫測之風 | Sango / Eshu |
+| 7 | Obara Meji | 奧貢的王者風範 | Osun / Ogun |
+| 8 | Okanran Meji | 衝突的火花 | Ogun / Sango |
+| 9 | Ogunda Meji | 開路者 | Ogun |
+| 10 | Osa Meji | 蛻變的風暴 | Oya |
+| 11 | Ika Meji | 品德的盟約 | Obatala / Orunmila |
+| 12 | Oturupon Meji | 深海之謎 | Yemoja / Olokun |
+| 13 | Otura Meji | 和解之道 | Eshu / Orunmila |
+| 14 | Irete Meji | 山的耐心 | Obatala / Orunmila |
+| 15 | Ose Meji | 奧順的豐盛 | Osun |
+| 16 | Ofun Meji | 圓滿循環的智慧 | Obatala / Orunmila |
 
 ---
 
