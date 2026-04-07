@@ -49,8 +49,8 @@ def t(key: str) -> str:
         return ZH_UI[key]
     # English fallbacks
     en_ui = {
-        "app_title": "Ifá Oracle — Orunmila's Wisdom",
-        "app_subtitle": "伊法神諕 — 奧倫米拉的智慧",
+        "app_title": "KinIfá 堅伊法",
+        "app_subtitle": "KinIfá 堅伊法 - 非洲占卜系統",
         "divination": "Divination",
         "browse_odu": "Browse Odu",
         "view_odu": "View Odu",
@@ -268,7 +268,7 @@ def display_result(result: DivinationResult) -> None:
 # ---------------------------------------------------------------------------
 
 with st.sidebar:
-    st.markdown("## 🔮 伊法神諕 / Ifá Oracle")
+    st.markdown("## 🔮 KinIfá 堅伊法")
 
     # Language toggle
     lang_options = ["中文", "English"]
