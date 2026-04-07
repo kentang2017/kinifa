@@ -1,9 +1,9 @@
-# Ifá Oracle — Orunmila's Wisdom
-# 伊法神諕 — 奧倫米拉的智慧
+# Kin Ifá 
+# 堅伊法
 
 **An educational Ifá divination system built with Python**
 
-**以 Python 構建的伊法占卜教育系統**
+**以 Python 構建的伊法占卜系統**
 
 ---
 
