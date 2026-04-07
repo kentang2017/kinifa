@@ -22,7 +22,7 @@ from odu_data_zh import ODU_ZH_BY_NUMBER, ZH_UI, OduZh
 # ---------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="伊法神諕 Ifá Oracle",
+    page_title="KinIfá 堅伊法",
     page_icon="🔮",
     layout="wide",
 )
