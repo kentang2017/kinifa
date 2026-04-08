@@ -566,8 +566,8 @@ def display_odu_tabs(
 
         render_sacred_divider()
 
-        st.markdown("#### About Ifá Divination / 關於伊法占卜" if is_zh()
-                     else "#### About Ifá Divination")
+        about_heading = "#### About Ifá Divination / 關於伊法占卜" if is_zh() else "#### About Ifá Divination"
+        st.markdown(about_heading)
         st.markdown(
             "Ifá is a **living, sacred oral tradition** of the Yoruba people. "
             "The 256 Odù Ifá form one of humanity's most complex knowledge systems. "
@@ -596,24 +596,21 @@ def display_odu_tabs(
             else:
                 st.caption(t("enhanced_note"))
 
-            # Build prompt
-            key_lessons_en = []
-            key_lessons_zh = []
-            orishas: list[str] = []
-            ese_en = ""
-            ese_zh = ""
-            chinese_name = ""
-
+            # Build prompt from OduFull / OduZh data
             if full:
-                for lesson in full.key_lessons:
-                    key_lessons_en.append(lesson.get("en", ""))
-                    key_lessons_zh.append(lesson.get("zh", ""))
+                key_lessons_en = [l.get("en", "") for l in full.key_lessons]
+                key_lessons_zh = [l.get("zh", "") for l in full.key_lessons]
                 orishas = full.principal_orishas
                 ese_en = full.short_ese_example.get("en", "")
                 ese_zh = full.short_ese_example.get("zh", "")
                 chinese_name = full.chinese_name
-            elif zh:
-                chinese_name = zh.chinese_name
+            else:
+                key_lessons_en = []
+                key_lessons_zh = []
+                orishas = []
+                ese_en = ""
+                ese_zh = ""
+                chinese_name = zh.chinese_name if zh else ""
 
             prompt_text = build_enhanced_prompt(
                 odu_name=odu.meji_name,
