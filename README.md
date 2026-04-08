@@ -1,9 +1,7 @@
-# Kin Ifá 
-# 堅伊法
-
-**An educational Ifá divination system built with Python**
-
+# Kin Ifá 堅伊法
 **以 Python 構建的伊法占卜系統**
+
+<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/e783262f-f2aa-45c0-bf48-8a8b79da09dd" />
 
 ---
 
