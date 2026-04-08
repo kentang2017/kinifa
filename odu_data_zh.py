@@ -764,4 +764,17 @@ ZH_UI = {
     "method_label_opele": "Ọ̀pẹ̀lẹ̀（鏈條）占卜",
     "method_label_ikin": "Ikin（棕櫚果）占卜",
     "footer": "Àṣẹ — 願奧倫米拉的祝福指引你的道路。",
+    "cast_button": "🎴 開始占卜",
+    "question_category": "問題類別",
+    "casting_animation": "神聖的器具正在傳達訊息……",
+    "tab_core": "✦ 核心訊息",
+    "tab_details": "📖 詳細含義",
+    "tab_orisha": "🌿 神靈與供品",
+    "tab_culture": "📝 文化註解",
+    "tab_enhanced": "🔮 增強解讀",
+    "enhanced_toggle": "啟用增強解讀（提示預覽）",
+    "enhanced_note": (
+        "此功能產生結構化提示範本，供伊法風格的詩意解讀使用。"
+        "目前不呼叫任何外部 AI 服務——僅顯示提示文字。"
+    ),
 }
